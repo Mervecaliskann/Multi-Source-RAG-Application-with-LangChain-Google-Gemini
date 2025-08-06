@@ -112,4 +112,6 @@ streamlit run app.py
 ```
 Web tarayıcınızı açın ve Streamlit tarafından sağlanan yerel URL'ye gidin (genellikle http://localhost:8501).
 
-![Uygulama Arayüzü]([./images/screenshot.png](https://github.com/Mervecaliskann/Multi-Source-RAG-Application-with-LangChain-Google-Gemini/blob/main/langchain-bellek-genisletme-url-pdf-Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-08-06%20232519.png)
+![Uygulama Arayüzü](https://github.com/Mervecaliskann/Multi-Source-RAG-Application-with-LangChain-Google-Gemini/blob/main/langchain-bellek-genisletme-url-pdf-Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-08-06%20232519.png)
+
+
