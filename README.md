@@ -70,3 +70,46 @@ streamlit run app.py
 ```
 
 Open your web browser and navigate to the local URL provided by Streamlit (usually http://localhost:8501).
+
+
+TR
+
+# Öne Çıkan Özellikler
+
+**İkili Veri Kaynağı:** Hem canlı web sayfalarından (URL) hem de yerel PDF dosyalarından gelen bilgileri işler.
+**RAG ve Standart LLM Karşılaştırması:** Harici bağlam kullanılarak ve kullanılmadan üretilen yanıtları yan yana karşılaştırarak, RAG'in halüsinasyonları önlemedeki ve gerçeğe dayalı yanıtlar vermedeki gücünü net bir şekilde gösterir.
+**Çoklu Model Entegrasyonu:** Metin üretimi için Google Gemini (gemini-1.5-flash-latest) ve metin vektörleştirmesi için OpenAI Embeddings kullanarak farklı yapay zeka servislerini bir arada kullanma esnekliğini sergiler.
+**Etkin Vektör Araması:** Doküman vektörleri üzerinde hızlı ve verimli bellek-içi benzerlik aramaları için FAISS (Facebook AI Similarity Search) kullanır.
+**Etkileşimli Web Arayüzü:** Streamlit ile oluşturulmuş kullanıcı dostu bir arayüz, sistemle kolay etkileşim sağlar.
+
+# Kurulum ve Çalıştırma
+
+## Sanal Ortam Oluşturun ve Aktifleştirin
+```
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## Ortam Değişkenlerini Ayarlayın
+
+Projenin kök dizininde, bir .env dosyası oluşturun.
+
+.env dosyasını açın ve OpenAI ve Google AI Studio'dan aldığınız API anahtarlarınızı ekleyin.
+
+## Veri Klasörünü Hazırlayın (PDF için)
+
+Uygulama, yüklenen PDF'lerin geçici olarak işlenmesini bekler. Mevcut kod yapısıyla (filepath=f"./data/{selected_file.name}") sorunsuz bir deneyim için kök dizinde bir data klasörünün bulunduğundan emin olun. Not: Streamlit'in dosya yükleyicisi bu işlemi bellekte yönetir, ancak dosyaları kalıcı olarak kaydetmek isterseniz bir data klasörüne sahip olmak iyi bir pratiktir.
+
+## Streamlit Uygulamasını Çalıştırın
+
+```python
+streamlit run app.py
+```
+Web tarayıcınızı açın ve Streamlit tarafından sağlanan yerel URL'ye gidin (genellikle http://localhost:8501).
+
+![Uygulama Arayüzü]([./images/screenshot.png](https://github.com/Mervecaliskann/Multi-Source-RAG-Application-with-LangChain-Google-Gemini/blob/main/langchain-bellek-genisletme-url-pdf-Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-08-06%20232519.png)
